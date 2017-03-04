@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[test article and some tips]]></title>
       <url>%2F2017%2F03%2F04%2Ftest-article-and-some-tips%2F</url>
-      <content type="text"><![CDATA[在参考知乎的教程初步搭建好博客后，这篇文章主要是一些测试工作和我觉得在使用过程中有必要知道的一些tips. 首先是更改站点的头像，参考github上的这篇文章，我的做法是先编辑站点的_config.yml, 新增字段avatar,值设置为头像的链接地址，我选择的是站点内的地址，在站点的source文件夹下新建uploads目录,然后把头像放置在站点source/uploads下，那么地址也就为/uploads/avatar.png了（avatar.png是你头像文件的文件名）。 发现next主题使用文档中有绝大多数需要的信息，可以按照上面的配置来，不再多说。]]></content>
+      <content type="text"><![CDATA[在参考知乎的教程初步搭建好博客后，这篇文章主要是一些测试工作和我觉得在使用过程中有必要知道的一些tips. 首先是更改站点的头像，参考github上的这篇文章，我的做法是先编辑站点的_config.yml, 新增字段avatar,值设置为头像的链接地址，我选择的是站点内的地址，在站点的source文件夹下新建uploads目录,然后把头像放置在站点source/uploads下，那么地址也就为/uploads/avatar.png了（avatar.png是你头像文件的文件名）。 发现next主题使用文档和Hexo的Next主题配置中有绝大多数需要的信息，可以按照上面的配置来，不再多说。 还一个要解决的问题是插图的问题，先来试试能否成功插图，看上去还是不错!]]></content>
     </entry>
 
     

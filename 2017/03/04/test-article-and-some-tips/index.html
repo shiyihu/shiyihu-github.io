@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -95,11 +95,13 @@
 <meta property="og:site_name" content="拾忆的杂货屋">
 <meta property="og:description" content="在参考知乎的教程初步搭建好博客后，这篇文章主要是一些测试工作和我觉得在使用过程中有必要知道的一些tips.
 首先是更改站点的头像，参考github上的这篇文章，我的做法是先编辑站点的_config.yml,  新增字段avatar,值设置为头像的链接地址，我选择的是站点内的地址，在站点的source文件夹下新建uploads目录,然后把头像放置在站点source/uploads下，那么地址也就为/">
-<meta property="og:updated_time" content="2017-03-04T03:45:31.288Z">
+<meta property="og:image" content="http://yoursite.com/2017/03/04/test-article-and-some-tips/avatar.png">
+<meta property="og:updated_time" content="2017-03-04T04:37:27.869Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="test article and some tips">
 <meta name="twitter:description" content="在参考知乎的教程初步搭建好博客后，这篇文章主要是一些测试工作和我觉得在使用过程中有必要知道的一些tips.
 首先是更改站点的头像，参考github上的这篇文章，我的做法是先编辑站点的_config.yml,  新增字段avatar,值设置为头像的链接地址，我选择的是站点内的地址，在站点的source文件夹下新建uploads目录,然后把头像放置在站点source/uploads下，那么地址也就为/">
+<meta name="twitter:image" content="http://yoursite.com/2017/03/04/test-article-and-some-tips/avatar.png">
 
 
 
@@ -108,12 +110,12 @@
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    sidebar: {"position":"right","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'Author'
     },
     algolia: {
       applicationID: '',
@@ -136,7 +138,7 @@
   <title> test article and some tips | 拾忆的杂货屋 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
 
@@ -168,7 +170,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-right page-post-detail ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -209,7 +211,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            Home
           </a>
         </li>
       
@@ -219,7 +221,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分类
+            Categories
           </a>
         </li>
       
@@ -229,7 +231,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            关于
+            About
           </a>
         </li>
       
@@ -239,7 +241,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archives
           </a>
         </li>
       
@@ -249,27 +251,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-sitemap">
-          <a href="/sitemap.xml" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
-            
-            站点地图
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-commonweal">
-          <a href="/404.html" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
-            
-            公益404
+            Tags
           </a>
         </li>
       
@@ -336,9 +318,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-04T09:52:45+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-04T09:52:45+08:00">
                 2017-03-04
               </time>
             
@@ -348,6 +330,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/nothing-serious/" itemprop="url" rel="index">
+                    <span itemprop="name">nothing serious</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -387,9 +391,10 @@
         <h3 id="在参考知乎的教程初步搭建好博客后，这篇文章主要是一些测试工作和我觉得在使用过程中有必要知道的一些tips"><a href="#在参考知乎的教程初步搭建好博客后，这篇文章主要是一些测试工作和我觉得在使用过程中有必要知道的一些tips" class="headerlink" title="在参考知乎的教程初步搭建好博客后，这篇文章主要是一些测试工作和我觉得在使用过程中有必要知道的一些tips."></a>在参考<a href="https://zhuanlan.zhihu.com/p/25471760" target="_blank" rel="external">知乎</a>的教程初步搭建好博客后，这篇文章主要是一些测试工作和我觉得在使用过程中有必要知道的一些tips.</h3><ul>
 <li><p>首先是更改站点的头像，参考<a href="https://github.com/iissnan/hexo-theme-next/wiki/%E8%AE%BE%E7%BD%AE%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%A4%B4%E5%83%8F" target="_blank" rel="external">github</a>上的这篇文章，我的做法是先编辑站点的<code>_config.yml</code>,  新增字段<code>avatar</code>,值设置为头像的链接地址，<br>我选择的是站点内的地址，在站点的<code>source</code>文件夹下新建<code>uploads</code>目录,然后把头像放置在站点<code>source/uploads</code>下，那么地址也就为<code>/uploads/avatar.png</code>了（<code>avatar.png</code>是你头像文件的文件名）。</p>
 </li>
-<li><p>发现<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">next主题使用文档</a>中有绝大多数需要的信息，可以按照上面的配置来，不再多说。</p>
+<li><p>发现<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">next主题使用文档</a>和<a href="https://syd192.github.io/2016/11/15/hexo-learn/" target="_blank" rel="external">Hexo的Next主题配置</a>中有绝大多数需要的信息，可以按照上面的配置来，不再多说。</p>
 </li>
-<li></li>
+<li><p>还一个要解决的问题是插图的问题，先来试试能否成功插图<img src="/2017/03/04/test-article-and-some-tips/avatar.png" alt="logo" title="logo">，看上去还是不错!</p>
+</li>
 </ul>
 
       
@@ -507,10 +512,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
+            Overview
           </li>
         </ul>
       
@@ -531,18 +536,25 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives">
                 <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">日志</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
 
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
           
 
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
                 <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">标签</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -608,11 +620,11 @@
 
 
 <div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主题 -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Pisces
   </a>
