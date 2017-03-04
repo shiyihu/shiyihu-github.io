@@ -87,15 +87,15 @@
 
 
 
-<meta name="description" content="It is a website for shaing shiyihu&apos;s notes.">
+<meta name="description" content="It is a website for sharing shiyihu&apos;s notes.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="拾忆的杂货屋">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="拾忆的杂货屋">
-<meta property="og:description" content="It is a website for shaing shiyihu&apos;s notes.">
+<meta property="og:description" content="It is a website for sharing shiyihu&apos;s notes.">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="拾忆的杂货屋">
-<meta name="twitter:description" content="It is a website for shaing shiyihu&apos;s notes.">
+<meta name="twitter:description" content="It is a website for sharing shiyihu&apos;s notes.">
 
 
 
@@ -202,6 +202,26 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Kategorien
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            Über
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
@@ -303,6 +323,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/04/test-article-and-some-tips/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/04/test-article-and-some-tips/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -327,8 +357,7 @@
       
         
           
-            <p>####　在参考<a href="https://zhuanlan.zhihu.com/p/25471760" target="_blank" rel="external">知乎</a>的教程初步搭建好博客后，这篇文章主要是一些测试工作和我觉得在使用过程中有必要知道的一些tips.</p>
-<ul>
+            <h3 id="在参考知乎的教程初步搭建好博客后，这篇文章主要是一些测试工作和我觉得在使用过程中有必要知道的一些tips"><a href="#在参考知乎的教程初步搭建好博客后，这篇文章主要是一些测试工作和我觉得在使用过程中有必要知道的一些tips" class="headerlink" title="在参考知乎的教程初步搭建好博客后，这篇文章主要是一些测试工作和我觉得在使用过程中有必要知道的一些tips."></a>在参考<a href="https://zhuanlan.zhihu.com/p/25471760" target="_blank" rel="external">知乎</a>的教程初步搭建好博客后，这篇文章主要是一些测试工作和我觉得在使用过程中有必要知道的一些tips.</h3><ul>
 <li>首先是更改站点的头像，参考<a href="https://github.com/iissnan/hexo-theme-next/wiki/%E8%AE%BE%E7%BD%AE%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%A4%B4%E5%83%8F" target="_blank" rel="external">github</a>上的这篇文章，我的做法是先编辑站点的<code>_config.yml</code>,  新增字段<code>avatar</code>,值设置为头像的链接地址，<br>我选择的是站点内的地址，在站点的<code>source</code>文件夹下新建<code>uploads</code>目录,然后把头像放置在站点<code>source/uploads</code>下，那么地址也就为<code>/uploads/avatar.png</code>了，（<code>avatar.png</code>是你头像文件的文件名）</li>
 </ul>
 
@@ -423,6 +452,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/02/My-first-article/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/02/My-first-article/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -542,6 +581,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/02/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/02/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -643,7 +692,7 @@
                alt="shyihu" />
           <p class="site-author-name" itemprop="name">shyihu</p>
            
-              <p class="site-description motion-element" itemprop="description">It is a website for shaing shiyihu's notes.</p>
+              <p class="site-description motion-element" itemprop="description">It is a website for sharing shiyihu's notes.</p>
           
         </div>
         <nav class="site-state motion-element">
@@ -809,32 +858,39 @@
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"shiyihu"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
 
 
-	
 
 
 
 
 
-  
 
-
-
-
-
-  
-
-
-
-
-
-  
 
 
 
