@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-04T07:01:40.971Z</updated>
+  <updated>2017-03-04T07:53:03.457Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/03/04/test-article-and-some-tips/"/>
     <id>http://yoursite.com/2017/03/04/test-article-and-some-tips/</id>
     <published>2017-03-04T01:52:45.000Z</published>
-    <updated>2017-03-04T07:01:40.971Z</updated>
+    <updated>2017-03-04T07:53:03.457Z</updated>
     
     <content type="html"><![CDATA[<p> 在参考<a href="https://zhuanlan.zhihu.com/p/25471760" target="_blank" rel="external">知乎</a>的教程初步搭建好博客后，这篇文章主要是一些测试工作和我觉得在使用过程中有必要知道的一些tips.</p>
 <ul>
@@ -32,7 +32,7 @@
 </li>
 </ul>
 <p>看上去还是不错!</p>
-<p>再试另一种插图方式<br><img src="https://github.com/shiyihu/my-file/raw/master/images/avatar.png" alt="logo2"><br>通过网址插入</p>
+<p>再试另一种插图方式，直接通过网址插入<br><img src="https://github.com/shiyihu/my-file/raw/master/images/avatar.png" alt="logo2"></p>
 <p>再试一种，<br><img src="https://github.com/shiyihu/my-file/raw/master/images/avatar.png" alt="logo3" height="200" width="200">,这个通过<code>img</code>标签插入可以调节大小，比较方便，但终究Markdown是一款文字处理软件，对图片插入还不是特别友好</p>
 <ul>
 <li>试试文件的下载，<a href="https://raw.githubusercontent.com/shiyihu/my-file/master/files/Lec18.pdf" target="_blank" rel="external">lake model</a>，还可以。</li>
