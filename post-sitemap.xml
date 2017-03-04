@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/2017/03/04/Markdown-%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%83%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+        <lastmod>2017-03-04T15:18:59.172Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/2017/03/04/test-article-and-some-tips/</loc>
         <lastmod>2017-03-04T07:53:03.457Z</lastmod>
         <changefreq>weekly</changefreq>
