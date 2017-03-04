@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>拾忆的杂货屋</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-03-04T07:01:40.971Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>shyihu</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test article and some tips</title>
+    <link href="http://yoursite.com/2017/03/04/test-article-and-some-tips/"/>
+    <id>http://yoursite.com/2017/03/04/test-article-and-some-tips/</id>
+    <published>2017-03-04T01:52:45.000Z</published>
+    <updated>2017-03-04T07:01:40.971Z</updated>
+    
+    <content type="html"><![CDATA[<p> 在参考<a href="https://zhuanlan.zhihu.com/p/25471760" target="_blank" rel="external">知乎</a>的教程初步搭建好博客后，这篇文章主要是一些测试工作和我觉得在使用过程中有必要知道的一些tips.</p>
+<ul>
+<li><p>首先是更改站点的头像，参考<a href="https://github.com/iissnan/hexo-theme-next/wiki/%E8%AE%BE%E7%BD%AE%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%A4%B4%E5%83%8F" target="_blank" rel="external">github</a>上的这篇文章，我的做法是先编辑站点的<code>_config.yml</code>,  新增字段<code>avatar</code>,值设置为头像的链接地址，<br>我选择的是站点内的地址，在站点的<code>source</code>文件夹下新建<code>uploads</code>目录,然后把头像放置在站点<code>source/uploads</code>下，那么地址也就为<code>/uploads/avatar.png</code>了（<code>avatar.png</code>是你头像文件的文件名）。</p>
+</li>
+<li><p>发现<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">next主题使用文档</a>和<a href="https://syd192.github.io/2016/11/15/hexo-learn/" target="_blank" rel="external">Hexo的Next主题配置</a>中有绝大多数需要的信息，可以按照上面的配置来，不再多说。</p>
+</li>
+<li><p>还一个要解决的问题是插图的问题，先来试试能否成功插图<br><img src="/2017/03/04/test-article-and-some-tips/avatar.png" alt="logo" title="logo"></p>
+</li>
+</ul>
+<p>看上去还是不错!</p>
+<p>再试另一种插图方式<br><img src="https://github.com/shiyihu/my-file/raw/master/images/avatar.png" alt="logo2"><br>通过网址插入</p>
+<p>再试一种，<br><img src="https://github.com/shiyihu/my-file/raw/master/images/avatar.png" alt="logo3" height="200" width="200">,这个通过<code>img</code>标签插入可以调节大小，比较方便，但终究Markdown是一款文字处理软件，对图片插入还不是特别友好</p>
+<ul>
+<li>试试文件的下载，<a href="https://raw.githubusercontent.com/shiyihu/my-file/master/files/Lec18.pdf" target="_blank" rel="external">lake model</a>，还可以。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 在参考&lt;a href=&quot;https://zhuanlan.zhihu.com/p/25471760&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;知乎&lt;/a&gt;的教程初步搭建好博客后，这篇文章主要是一些测试工作和我觉得在使用过程中有必要知道的一些tips.
+    
+    </summary>
+    
+      <category term="nothing serious" scheme="http://yoursite.com/categories/nothing-serious/"/>
+    
+    
+      <category term="tips" scheme="http://yoursite.com/tags/tips/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>My first article</title>
+    <link href="http://yoursite.com/2017/03/02/My-first-article/"/>
+    <id>http://yoursite.com/2017/03/02/My-first-article/</id>
+    <published>2017-03-01T23:53:31.000Z</published>
+    <updated>2017-03-01T23:57:48.303Z</updated>
+    
+    <content type="html"><![CDATA[<p>许久之后又开始搭建自己的博客了。<br>希望这次一切都好。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;许久之后又开始搭建自己的博客了。&lt;br&gt;希望这次一切都好。&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2017/03/02/hello-world/"/>
+    <id>http://yoursite.com/2017/03/02/hello-world/</id>
+    <published>2017-03-01T22:49:36.596Z</published>
+    <updated>2017-03-01T22:49:36.596Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
