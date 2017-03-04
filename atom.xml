@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-04T15:18:59.172Z</updated>
+  <updated>2017-03-04T15:21:54.223Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/03/04/Markdown-%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%83%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://yoursite.com/2017/03/04/Markdown-语法和练习（一）/</id>
     <published>2017-03-04T14:08:52.000Z</published>
-    <updated>2017-03-04T15:18:59.172Z</updated>
+    <updated>2017-03-04T15:21:54.223Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h2><p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
 <p>Markdown 的目标是实现「易读易写」，因此Markdown的使用应该是自然的，让我们在写作时专注于内容，不需额外考虑格式，因此在一定程度上和LaTeX很像，其实Markdown文件也可以比较容易的转换为LaTeX或HTML。</p>
@@ -53,8 +53,7 @@
 <li>2–</li>
 <li>3–</li>
 </ol>
-<p>##代码插入</p>
-<p>代码插入有两种，一种是内联的短代码，用反引号<code>` </code>来标记内联代码，比如它们会解释成<code>&lt;code&gt;</code>标签。如果代码的内容中有反引号，请用两个反引号包裹。代码中的<code>&amp;</code>、<code>&lt;</code>、<code>&gt;</code>符号都会自动转义，请放心使用</p>
+<h2 id="代码插入"><a href="#代码插入" class="headerlink" title="代码插入"></a>代码插入</h2><p>代码插入有两种，一种是内联的短代码，用反引号<code>` </code>来标记内联代码，比如它们会解释成<code>&lt;code&gt;</code>标签。如果代码的内容中有反引号，请用两个反引号包裹。代码中的<code>&amp;</code>、<code>&lt;</code>、<code>&gt;</code>符号都会自动转义，请放心使用</p>
 
 <p>另一种是代码块，通过在句首用制表符或者四个空格来指示，上面讲列表的时候就是这样做的，如果是在列表中要插入代码块，则需要使用两个制表符或者八个空格，这在插入代码时比较有用。</p>
 <p>下面举个例子，内联代码如<code>python</code>,<code>a+b</code>,代码块如</p>
