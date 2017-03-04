@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title><![CDATA[test article and some tips]]></title>
+      <url>%2F2017%2F03%2F04%2Ftest-article-and-some-tips%2F</url>
+      <content type="text"><![CDATA[在参考知乎的教程初步搭建好博客后，这篇文章主要是一些测试工作和我觉得在使用过程中有必要知道的一些tips. 首先是更改站点的头像，参考github上的这篇文章，我的做法是先编辑站点的_config.yml, 新增字段avatar,值设置为头像的链接地址，我选择的是站点内的地址，在站点的source文件夹下新建uploads目录,然后把头像放置在站点source/uploads下，那么地址也就为/uploads/avatar.png了（avatar.png是你头像文件的文件名）。 发现next主题使用文档中有绝大多数需要的信息，可以按照上面的配置来，不再多说。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[My first article]]></title>
+      <url>%2F2017%2F03%2F02%2FMy-first-article%2F</url>
+      <content type="text"><![CDATA[许久之后又开始搭建自己的博客了。希望这次一切都好。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>%2F2017%2F03%2F02%2Fhello-world%2F</url>
+      <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    </entry>
+
+    
+  
+  
+</search>
