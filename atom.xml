@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-11T06:45:07.420Z</updated>
+  <updated>2017-03-11T09:04:40.120Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,12 +20,34 @@
     <link href="http://yoursite.com/2017/03/11/Markdown%E8%AF%AD%E6%B3%95%E4%B8%8E%E7%BB%83%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
     <id>http://yoursite.com/2017/03/11/Markdown语法与练习（二）/</id>
     <published>2017-03-11T06:45:07.000Z</published>
-    <updated>2017-03-11T06:45:07.420Z</updated>
+    <updated>2017-03-11T09:04:40.120Z</updated>
+    
+    <content type="html"><![CDATA[<p>本来这篇是想写关于Markdown中插入数学公式的一些内容的，但随之发现有一点坑，在MarkdownPad2中我习惯性的按照LaTeX的语法开始写公式，发现并不能解析，然后上网查找，发现需要在<code>md</code>文件中添加下面这段就可以了：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>当然其实最好是永久的设置，是在MarkdownPad2中<code>工具-选项-高级-HTML编辑器</code>中加入上面那段话，然后保存就可以了，但要想在博客中显示出来，还需要一个工作。</p>
+<p>在博客的根目录下，打开<code>git bash</code>,输入</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-math --save</div></pre></td></tr></table></figure>
+<p>之后再站点配置文件<code>_config.yml</code>添加<code>plungins: hexo-math</code>就可以了，存在的一个问题是在MarkdownPad2中并不能实时预览公式的渲染，需要按F6在浏览器中预览时才能看到数学公式，有点嫌麻烦，于是我开始寻找其他的Markdown编辑器。</p>
+<p>先尝试了知乎网友自己写的一个<a href="https://github.com/jbt/markdown-editor" target="_blank" rel="external">MarkDownEditor</a>,这款编辑器支持直接写数学公式，而且像很多编辑器一样分屏预览，可以比较容易的输出PDF、HTML等各种格式，免费开源，各种功能也很全，但个人觉得主要是界面不是很好看，总体还是不错的，喜欢的可以使用。</p>
+<p>后面又尝试了一下<a href="https://typora.io/" target="_blank" rel="external">Typora</a>,这完全是另一种风格，不再分屏显示，将写字和预览结合在一起了，感觉又像拥有了Word那种即写即见的特点，而且很多小功能也做得不错，比如图片可以直接拖进来插入，还是比较方便的，这里在补充一句，在Markdown中直接插入图片关于大小很难控制，但可以通过HTML的<code>img</code>标签来控制大小，如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://github.com/shiyihu/my-file/raw/master/images/avatar.png"</span> <span class="attr">alt</span>=<span class="string">"logo3"</span>  <span class="attr">height</span>=<span class="string">"200"</span> <span class="attr">width</span>=<span class="string">"200"</span> /&gt;</span></div></pre></td></tr></table></figure>
+<p>这是在<a href="https://shiyihu.github.io/2017/03/04/test-article-and-some-tips/" target="_blank" rel="external">test article and some tips</a>中我插入的第三张小图，所以还是用Markdown来做纯文字工作比较好，太复杂倒失去了本意，于是我开始转而使用Typora了。再附上别人写的一些使用的说明，如<a href="http://www.jianshu.com/p/092de536d948" target="_blank" rel="external">Typora For Markdown 语法</a>,还有<a href="http://www.jianshu.com/p/5256ecc06eec" target="_blank" rel="external">安利一下Typora：极致简洁的markdown编辑器</a>,根本原则还是多用。</p>
+<p>所以之后发现不太想写关于数学公式的插入了，因为各个编辑器略有不同，但数学公式的插入其实基本按照LaTeX那一套语法来的，需要用的自然会去学，所以Markdown系列暂时就到这里了，写的随意，最后附上自认为比较好的进阶教程<a href="https://wizardforcel.gitbooks.io/markdown-simple-world/content/index.html" target="_blank" rel="external">Markdown - 简单的世界</a>,可以再学学Markdown的其他tips.</p>
+]]></content>
     
     <summary type="html">
     
+      &lt;p&gt;本来这篇是想写关于Markdown中插入数学公式的一些内容的，但随之发现有一点坑，在MarkdownPad2中我习惯性的按照LaTeX的语法开始写公式，发现并不能解析，然后上网查找，发现需要在&lt;code&gt;md&lt;/code&gt;文件中添加下面这段就可以了：&lt;/p&gt;
+&lt;figure
+    
     </summary>
     
+      <category term="computer science" scheme="http://yoursite.com/categories/computer-science/"/>
+    
+    
+      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
+    
+      <category term="CS" scheme="http://yoursite.com/tags/CS/"/>
     
   </entry>
   
@@ -34,7 +56,7 @@
     <link href="http://yoursite.com/2017/03/04/Markdown-%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%83%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://yoursite.com/2017/03/04/Markdown-语法和练习（一）/</id>
     <published>2017-03-04T14:08:52.000Z</published>
-    <updated>2017-03-11T07:48:56.872Z</updated>
+    <updated>2017-03-11T08:08:21.898Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h2><p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
 <p>Markdown 的目标是实现「易读易写」，因此Markdown的使用应该是自然的，让我们在写作时专注于内容，不需额外考虑格式，因此在一定程度上和LaTeX很像，其实Markdown文件也可以比较容易的转换为LaTeX或HTML。</p>
@@ -97,8 +119,8 @@ _这也是斜体_
 <li><strong>这是粗体</strong></li>
 <li><strong><em>这是粗体+斜体</em></strong></li>
 </ul>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>可以用<code>---</code>或者<code>***</code>来给文本添上分割线，效果如下：</p>
-<h2 id=""><a href="#" class="headerlink" title="*"></a><em>*</em></h2><h2 id="链接、图片"><a href="#链接、图片" class="headerlink" title="链接、图片"></a>链接、图片</h2><p>可以用<code>[拾忆的杂货屋](https://shiyihu.github.io/)</code>来添加链接，如下：</p>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>可以用<code>---</code>或者<code>***</code>来给文本添上分割线，单独在一行即可：</p>
+<h2 id="链接、图片"><a href="#链接、图片" class="headerlink" title="链接、图片"></a>链接、图片</h2><p>可以用<code>[拾忆的杂货屋](https://shiyihu.github.io/)</code>来添加链接，如下：</p>
 <p><a href="https://shiyihu.github.io/" target="_blank" rel="external">拾忆的杂货屋</a></p>
 <p>至于图片，在MarkdownPad2中比较复杂，特别是想要部署到hexo博客中去，但一般的插入语法是 <code>![](图片链接地址)</code>,<code>[]</code>中可以填也可以不填。<br>下面说说怎么在hexo博客中插入图片。</p>
 <ul>
@@ -106,13 +128,16 @@ _这也是斜体_
 <li>另一种是需要做一些配置，然后就可以节约上传图片这一步了，具体如下：<ul>
 <li>先更改站点文件<code>_config.yml</code>中<code>post_asset_folder</code>的值为<code>true</code>,即<code>post_asset_folder:true</code>;</li>
 <li>在hexo的目录下执行<code>npm install https://github.com/CodeFalling/hexo-asset-image --save</code></li>
-<li>之后再用hexo新建文章时就会在<code>_post</code>目录下新建一个与文章同名的文件夹，可以把与该文章相关的所有资源都放到那个文件夹，这样便可以更方便的使用资源。<a href="Markdown-语法和练习（一）\Lec18.pdf">lake model</a></li>
+<li>之后再用hexo新建文章时就会在<code>_post</code>目录下新建一个与文章同名的文件夹，可以把与该文章相关的所有资源都放到那个文件夹，这样便可以更方便的使用资源。</li>
 <li>将图片文件放回去之后，就可以把插入图片时需要填写的图片链接地址改为该图片的相对位置，比如我在另一篇文章<a href="https://shiyihu.github.io/2017/03/04/test-article-and-some-tips/" target="_blank" rel="external">test article and some tips</a>中要插入图片的语法是<br><code>![logo](test-article-and-some-tips/avatar.png )</code></li>
 </ul>
 </li>
 <li>还有另一种方法是将图片上传至GitHub（最好新建一个库放置这些乱七八糟的东西），然后链接填其网址，这其实和第一种方法差不多，但我还是更偏爱这种。</li>
 </ul>
-<p>说到插入图片，我突然想到了上传文件这事，偶尔还是有需要的，然后尝试了第一种方法，如上面将图片传至GitHub相应库一样，将文件上传之后像添加网址一样，如<a href="https://raw.githubusercontent.com/shiyihu/my-file/master/files/Lec18.pdf" target="_blank" rel="external">lake model</a>（这个文件只是我用来做实验的），突发奇想，能不能把文件放在本地呢，也试试<a href="Markdown-语法和练习（一）\Lec18.pdf">lake model</a>。</p>
+<h2 id="上传文件"><a href="#上传文件" class="headerlink" title="上传文件"></a>上传文件</h2><p>说到插入图片，我突然想到了上传文件这事，偶尔还是有需要的，然后尝试了第一种方法，如上面将图片传至GitHub相应库一样，将文件上传之后像添加网址一样，如<a href="https://raw.githubusercontent.com/shiyihu/my-file/master/files/Lec18.pdf" target="_blank" rel="external">lake model</a>（这个文件只是我用来做实验的），突发奇想，能不能把文件放在本地呢，也试试<a href="\uploads\Lec18.pdf">lake model</a>。确实是可以的，把文件放在<code>\blog\source\uploads</code>中，然后引用其相对路径，比如</p>
+<pre><code>[lake model](\uploads\Lec18.pdf)
+</code></pre><p>这样就插入了那个文件，但我猜测放在这里面的话会影响部署hexo时的加载速度（并不是很清楚），所以还是用上传至GitHub那种方法吧。</p>
+<h2 id="End"><a href="#End" class="headerlink" title="End"></a>End</h2><p>这篇文章就到此结束了，瞎折腾还是比较好玩，既可以熟悉又可以学到新的技能，上面那个上传文件的方法其实试了挺久，自己胡乱想到的，还是比较好玩，欢迎共同学习。</p>
 ]]></content>
     
     <summary type="html">

@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Markdown,CS," />
 
 
 
@@ -89,16 +89,19 @@
 
 
 
-<meta name="description" content="It is a website for sharing shiyihu&apos;s notes.">
+<meta name="description" content="本来这篇是想写关于Markdown中插入数学公式的一些内容的，但随之发现有一点坑，在MarkdownPad2中我习惯性的按照LaTeX的语法开始写公式，发现并不能解析，然后上网查找，发现需要在md文件中添加下面这段就可以了：
+12&amp;lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Markdown语法与练习（二）">
 <meta property="og:url" content="http://yoursite.com/2017/03/11/Markdown语法与练习（二）/index.html">
 <meta property="og:site_name" content="拾忆的杂货屋">
-<meta property="og:description" content="It is a website for sharing shiyihu&apos;s notes.">
-<meta property="og:updated_time" content="2017-03-11T06:45:07.420Z">
+<meta property="og:description" content="本来这篇是想写关于Markdown中插入数学公式的一些内容的，但随之发现有一点坑，在MarkdownPad2中我习惯性的按照LaTeX的语法开始写公式，发现并不能解析，然后上网查找，发现需要在md文件中添加下面这段就可以了：
+12&amp;lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.">
+<meta property="og:updated_time" content="2017-03-11T09:04:40.120Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown语法与练习（二）">
-<meta name="twitter:description" content="It is a website for sharing shiyihu&apos;s notes.">
+<meta name="twitter:description" content="本来这篇是想写关于Markdown中插入数学公式的一些内容的，但随之发现有一点坑，在MarkdownPad2中我习惯性的按照LaTeX的语法开始写公式，发现并不能解析，然后上网查找，发现需要在md文件中添加下面这段就可以了：
+12&amp;lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.">
 
 
 
@@ -360,6 +363,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/computer-science/" itemprop="url" rel="index">
+                    <span itemprop="name">computer science</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -406,7 +431,18 @@
       
 
       
-        
+        <p>本来这篇是想写关于Markdown中插入数学公式的一些内容的，但随之发现有一点坑，在MarkdownPad2中我习惯性的按照LaTeX的语法开始写公式，发现并不能解析，然后上网查找，发现需要在<code>md</code>文件中添加下面这段就可以了：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>当然其实最好是永久的设置，是在MarkdownPad2中<code>工具-选项-高级-HTML编辑器</code>中加入上面那段话，然后保存就可以了，但要想在博客中显示出来，还需要一个工作。</p>
+<p>在博客的根目录下，打开<code>git bash</code>,输入</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-math --save</div></pre></td></tr></table></figure>
+<p>之后再站点配置文件<code>_config.yml</code>添加<code>plungins: hexo-math</code>就可以了，存在的一个问题是在MarkdownPad2中并不能实时预览公式的渲染，需要按F6在浏览器中预览时才能看到数学公式，有点嫌麻烦，于是我开始寻找其他的Markdown编辑器。</p>
+<p>先尝试了知乎网友自己写的一个<a href="https://github.com/jbt/markdown-editor" target="_blank" rel="external">MarkDownEditor</a>,这款编辑器支持直接写数学公式，而且像很多编辑器一样分屏预览，可以比较容易的输出PDF、HTML等各种格式，免费开源，各种功能也很全，但个人觉得主要是界面不是很好看，总体还是不错的，喜欢的可以使用。</p>
+<p>后面又尝试了一下<a href="https://typora.io/" target="_blank" rel="external">Typora</a>,这完全是另一种风格，不再分屏显示，将写字和预览结合在一起了，感觉又像拥有了Word那种即写即见的特点，而且很多小功能也做得不错，比如图片可以直接拖进来插入，还是比较方便的，这里在补充一句，在Markdown中直接插入图片关于大小很难控制，但可以通过HTML的<code>img</code>标签来控制大小，如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://github.com/shiyihu/my-file/raw/master/images/avatar.png"</span> <span class="attr">alt</span>=<span class="string">"logo3"</span>  <span class="attr">height</span>=<span class="string">"200"</span> <span class="attr">width</span>=<span class="string">"200"</span> /&gt;</span></div></pre></td></tr></table></figure>
+<p>这是在<a href="https://shiyihu.github.io/2017/03/04/test-article-and-some-tips/" target="_blank" rel="external">test article and some tips</a>中我插入的第三张小图，所以还是用Markdown来做纯文字工作比较好，太复杂倒失去了本意，于是我开始转而使用Typora了。再附上别人写的一些使用的说明，如<a href="http://www.jianshu.com/p/092de536d948" target="_blank" rel="external">Typora For Markdown 语法</a>,还有<a href="http://www.jianshu.com/p/5256ecc06eec" target="_blank" rel="external">安利一下Typora：极致简洁的markdown编辑器</a>,根本原则还是多用。</p>
+<p>所以之后发现不太想写关于数学公式的插入了，因为各个编辑器略有不同，但数学公式的插入其实基本按照LaTeX那一套语法来的，需要用的自然会去学，所以Markdown系列暂时就到这里了，写的随意，最后附上自认为比较好的进阶教程<a href="https://wizardforcel.gitbooks.io/markdown-simple-world/content/index.html" target="_blank" rel="external">Markdown - 简单的世界</a>,可以再学学Markdown的其他tips.</p>
+
       
     </div>
 
@@ -426,6 +462,14 @@
 
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Markdown/" rel="tag"># Markdown</a>
+          
+            <a href="/tags/CS/" rel="tag"># CS</a>
+          
+        </div>
       
 
       
