@@ -7,7 +7,7 @@
 
 <html class="theme-next pisces use-motion" lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -99,7 +99,7 @@ Markdownd的语法教程网">
 <meta property="og:description" content="Markdown简介Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。
 Markdown 的目标是实现「易读易写」，因此Markdown的使用应该是自然的，让我们在写作时专注于内容，不需额外考虑格式，因此在一定程度上和LaTeX很像，其实Markdown文件也可以比较容易的转换为LaTeX或HTML。
 Markdownd的语法教程网">
-<meta property="og:updated_time" content="2017-03-04T15:37:41.317Z">
+<meta property="og:updated_time" content="2017-03-11T07:48:56.872Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown 语法和练习（一）">
 <meta name="twitter:description" content="Markdown简介Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。
@@ -138,7 +138,7 @@ Markdownd的语法教程网">
 
 
 
-  <title> Markdown 语法和练习（一） | 拾忆的杂货屋 </title>
+  <title> Markdown 语法和练习（一） | 拾忆的杂货屋 </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -149,7 +149,7 @@ Markdownd的语法教程网">
 
 
 
-  <script type="text/javascript">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><script type="text/javascript">
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
@@ -436,7 +436,7 @@ Markdownd的语法教程网">
       
         <h2 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h2><p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
 <p>Markdown 的目标是实现「易读易写」，因此Markdown的使用应该是自然的，让我们在写作时专注于内容，不需额外考虑格式，因此在一定程度上和LaTeX很像，其实Markdown文件也可以比较容易的转换为LaTeX或HTML。</p>
-<p>Markdownd的语法教程网上很多，<a href="http://www.appinn.com/markdown/#philosophy" target="_blank" rel="external">Markdown 语法说明</a>应该是比较全面的官方文档了，可对于初步使用其实并不需要知道那么多，作为一门工具我们可以在了解初步语法之后边用边学，这也是本文的目的。另外，我还将结合Hexo博客的写作来写。</p>
+<p>Markdownd的语法教程网上很多，<a href="http://www.appinn.com/markdown/#philosophy" target="_blank" rel="external">Markdown 语法说明</a>应该是比较全面的官方文档了，可对于初步使用其实并不需要知道那么多，作为一门工具我们可以在了解初步语法之后边用边学，这也是本文的目的。另外，我还将结合Hexo博客的写作来写。<br>另外，在此声明一下本文使用的编辑器是MarkdownPad2，发现不同的编辑器可能语法有一些不一样，但也大同小异。</p>
 <h2 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h2><p>自然的，一行文字就会形成一段话，如果你要开始新的一段，需要多空一行，这和LaTeX是一致的。</p>
 <h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>Markdown中通过    <code>#</code>    号来指明标题内容，共有六级标题，用不同个数的<code>#</code>号来表示，一个最大，是一级标题，六个最小，需要注意的是<code>#</code>号和标题内容之间要有一个空格，下面做一些展示</p>
 <ul>
@@ -495,7 +495,23 @@ _这也是斜体_
 <li><strong>这是粗体</strong></li>
 <li><strong><em>这是粗体+斜体</em></strong></li>
 </ul>
-<h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h2>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>可以用<code>---</code>或者<code>***</code>来给文本添上分割线，效果如下：</p>
+<h2 id=""><a href="#" class="headerlink" title="*"></a><em>*</em></h2><h2 id="链接、图片"><a href="#链接、图片" class="headerlink" title="链接、图片"></a>链接、图片</h2><p>可以用<code>[拾忆的杂货屋](https://shiyihu.github.io/)</code>来添加链接，如下：</p>
+<p><a href="https://shiyihu.github.io/" target="_blank" rel="external">拾忆的杂货屋</a></p>
+<p>至于图片，在MarkdownPad2中比较复杂，特别是想要部署到hexo博客中去，但一般的插入语法是 <code>![](图片链接地址)</code>,<code>[]</code>中可以填也可以不填。<br>下面说说怎么在hexo博客中插入图片。</p>
+<ul>
+<li>最简单的方法是将图片上传至网络上的图片云服务器生成图片链接，比如七牛之类，然后把图片链接填入即可，网上有很多这个教程，我嫌麻烦，没有使用过这种方法；</li>
+<li>另一种是需要做一些配置，然后就可以节约上传图片这一步了，具体如下：<ul>
+<li>先更改站点文件<code>_config.yml</code>中<code>post_asset_folder</code>的值为<code>true</code>,即<code>post_asset_folder:true</code>;</li>
+<li>在hexo的目录下执行<code>npm install https://github.com/CodeFalling/hexo-asset-image --save</code></li>
+<li>之后再用hexo新建文章时就会在<code>_post</code>目录下新建一个与文章同名的文件夹，可以把与该文章相关的所有资源都放到那个文件夹，这样便可以更方便的使用资源。<a href="Markdown-语法和练习（一）\Lec18.pdf">lake model</a></li>
+<li>将图片文件放回去之后，就可以把插入图片时需要填写的图片链接地址改为该图片的相对位置，比如我在另一篇文章<a href="https://shiyihu.github.io/2017/03/04/test-article-and-some-tips/" target="_blank" rel="external">test article and some tips</a>中要插入图片的语法是<br><code>![logo](test-article-and-some-tips/avatar.png )</code></li>
+</ul>
+</li>
+<li>还有另一种方法是将图片上传至GitHub（最好新建一个库放置这些乱七八糟的东西），然后链接填其网址，这其实和第一种方法差不多，但我还是更偏爱这种。</li>
+</ul>
+<p>说到插入图片，我突然想到了上传文件这事，偶尔还是有需要的，然后尝试了第一种方法，如上面将图片传至GitHub相应库一样，将文件上传之后像添加网址一样，如<a href="https://raw.githubusercontent.com/shiyihu/my-file/master/files/Lec18.pdf" target="_blank" rel="external">lake model</a>（这个文件只是我用来做实验的），突发奇想，能不能把文件放在本地呢，也试试<a href="Markdown-语法和练习（一）\Lec18.pdf">lake model</a>。</p>
+
       
     </div>
 
@@ -542,6 +558,10 @@ _这也是斜体_
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/11/Markdown语法与练习（二）/" rel="prev" title="Markdown语法与练习（二）">
+                Markdown语法与练习（二） <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -636,7 +656,7 @@ _这也是斜体_
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -734,7 +754,7 @@ _这也是斜体_
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown简介"><span class="nav-number">1.</span> <span class="nav-text">Markdown简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#段落"><span class="nav-number">2.</span> <span class="nav-text">段落</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标题"><span class="nav-number">3.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表"><span class="nav-number">4.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码插入"><span class="nav-number">5.</span> <span class="nav-text">代码插入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引用"><span class="nav-number">6.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#粗体、斜体"><span class="nav-number">7.</span> <span class="nav-text">粗体、斜体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#未完待续"><span class="nav-number">8.</span> <span class="nav-text">未完待续</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown简介"><span class="nav-number">1.</span> <span class="nav-text">Markdown简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#段落"><span class="nav-number">2.</span> <span class="nav-text">段落</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标题"><span class="nav-number">3.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表"><span class="nav-number">4.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码插入"><span class="nav-number">5.</span> <span class="nav-text">代码插入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引用"><span class="nav-number">6.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#粗体、斜体"><span class="nav-number">7.</span> <span class="nav-text">粗体、斜体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分割线"><span class="nav-number">8.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">9.</span> <span class="nav-text">*</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链接、图片"><span class="nav-number">10.</span> <span class="nav-text">链接、图片</span></a></li></ol></div>
             
 
           </div>
@@ -1136,7 +1156,24 @@ _这也是斜体_
         showTime(Counter);
       }
     });
-  </script>
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 
